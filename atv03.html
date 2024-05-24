@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e Tabela</title>
+    <style>
+        table {
+            /* width: 400px; */
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: rgb(196, 206, 219);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="" autocomplete="off">
+        <p><label for="iname">Nome: </label><input type="text" name="name" id="iname"></p>
+        <p><label for="iemail">Email</label>: <input type="email" name="email" id="iemail"></p>
+        <p><label for="itelefone">Telefone</label>: <input type="tel" name="telefone" id="itelefone"></p>
+        <p><label for="inasciemento">Data de Nascimento:</label> <input type="date" name="nasciemento"
+                id="inasciemento"></p>
+        <p>Sexo:
+            <input type="radio" name="sexo" id="imasculino" value="Masculino">
+            <label for="imasculino">Masculino</label>
+            <input type="radio" name="sexo" id="ifeminino" value="Feminino">
+            <label for="ifeminino">Feminino</label>
+        </p>
+        <p> <input type="submit" value="Enviar"></p>
+    </form>
+
+    <h1>Tabela</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Nome Completo</th>
+                <th scope="col">Gênero</th>
+                <th scope="col" class="tel" style="width: 150px;">Telefone</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Silva</td>
+                <td>Masculino</td>
+                <td class="tel">(11) 98765-4321</td>
+                <td>joao.silva@email.com</td>
+            </tr>
+            <tr>
+                <td>Maria Oliveira	</td>
+                <td>Feminino</td>
+                <td class="tel">(11) 91234-5678	</td>
+                <td>maria.oliveira@email.com</td>
+            </tr>
+            <tr>
+                <td>Pedro Souza	</td>
+                <td>Masculino</td>
+                <td class="tel">(11) 99876-5432</td>
+                <td>pedro.souza@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
