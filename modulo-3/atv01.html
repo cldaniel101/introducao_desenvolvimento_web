@@ -1,0 +1,76 @@
+<!-- CLÁUDIO DANIEL FIGUEREDO PERUNA -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização de Textos usando CSS</title>
+
+    <style>
+        p, a {
+            /* Definindo a fonte, tamanho e cor do texto */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            color: brown;
+
+            /* Definindo a posição do texto na página */
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        a {
+            /* Estilos do link normal */
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: chartreuse;
+            text-decoration: overline;
+        }
+
+        a:hover {
+            /* Estilos de link ao passar o mouse por cima */
+            color: aqua;
+            text-decoration: underline;
+            font-size: larger;
+        }
+
+        p>#parte-negrito {
+            font-weight: bold;
+            color: blueviolet;
+        }
+        p>.italico {
+            font-style: italic;
+        }
+        p>#sublinhado {
+            text-decoration: underline;
+        }
+        p>#mais-espacamento {
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span id="parte-negrito">
+            Sed quas sequi ullam fuga sunt dolorum reprehenderit
+            ducimus.
+        </span> Ipsam vitae iure incidunt aut excepturi praesentium itaque! Vitae architecto labore mollitia unde.
+        <span class="italico">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Dicta sit eius, ea totam
+        molestias voluptates odio,
+        veniam corrupti dolore natus aliquid excepturi at officiis nemo perferendis provident itaque <span
+            class="italico">veritatis maxime!</span>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nesciunt id harum eum cupiditate. Nobis inventore
+        itaque, aliquid corrupti vitae perspiciatis voluptate consequatur sapiente repellendus. Dicta facilis nostrum
+        molestiae illo.
+    </p>
+    <p>
+        <span id="sublinhado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>Commodi itaque blanditiis natus amet, rerum sit minima rem perferendis delectus nulla architecto vitae quaerat sequi eveniet esse velit molestias, nisi vel?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, fugiat magnam deleniti quo quos libero nostrum architecto tempore aspernatur dignissimos necessitatibus modi itaque optio nulla voluptate <span id="mais-espacamento">eaque delectus nemo repellat?</span>
+    </p>
+    <a href="https://github.com/cldaniel101" target="_blank">Meu GitHub!</a>
+</body>
+
+</html>
