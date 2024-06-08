@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root {
+	--cor1: #8d79ae;
+	--cor2: #674f91;
+	--cor3: #482e74;
+	--cor4: #2d1557;
+	--cor5: #19063a;
+	--cor6: #202020;
+	--cor7: #b3adad;
+}
+
+html {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	color: #b3adad;
+	background-color: var(--cor6);
+}
+
+header,
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+}
+
+header > #titulo-cabecalho {
+	font-family: "Salsa", cursive;
+	color: var(--cor1);
+	font-size: 35px;
+	margin-left: 50px;
+}
+
+header > nav > div {
+	margin-right: 50px;
+	font-size: 16px;
+}
+
+section#call-to-action {
+    font-weight: 400;
+    font-size: 35px;
+    height: 87vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+section#call-to-action > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+section#call-to-action p#nome {
+    color: var(--cor2);
+    font-weight: 600;
+}
+
+section#call-to-action p#descricao {
+    width: 30vw;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section#call-to-action #botoes {
+    display: flex;
+}
+
+section#call-to-action .botao {
+    margin: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor5);
+    border-radius: 5px;
+}
