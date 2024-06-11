@@ -8,6 +8,7 @@
 	--cor5: #19063a;
 	--cor6: #202020;
 	--cor7: #b3adad;
+    --cor8: #2e2e2e;
 }
 
 html {
@@ -211,7 +212,7 @@ section#sobre-mim > p {
     width: 260px;
     height: 150px;
     padding: 25px;
-    background-color: #2e2e2e;
+    background-color: var(--cor8);
     border-radius: 8px;
     transition: 0.3s;
     
@@ -251,4 +252,57 @@ section#sobre-mim > p {
 .card-projeto > a:hover {
     color: white;
     border-bottom: #e6e2e2;
+}
+
+section#contatos > h1 {
+    margin-bottom: 70px;
+}
+
+div#cards-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+div.card-contato {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card-contato a {
+    color: var(--cor7);
+}
+
+.circulo-icone {
+    background-color: var(--cor8);
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo-icone > img {
+    width: 50%;
+}
+
+div.card-contato > h2 {
+    color: white;
+    font-weight: 600;
+    margin: 15px;
+}
+
+div.card-contato > p {
+    font-weight: 500;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#espaco {
+    height: 100px;
 }
