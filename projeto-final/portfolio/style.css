@@ -117,7 +117,7 @@ section#call-to-action .botao:hover {
 .botao > p {
     font-size: 40%;
     font-weight: 600;
-    color: var(--cor7);
+    color: #e6e2e2;
 }
 
 section#call-to-action img {
@@ -195,4 +195,60 @@ section#sobre-mim > p {
 .card-hab > i {
     color: var(--cor4);
     font-size: 2.7rem;
+}
+
+#grade-projetos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 85vw;
+    margin: auto;
+}
+
+.card-projeto {
+    border: 1px solid var(--cor6);
+    width: 260px;
+    height: 150px;
+    padding: 25px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    transition: 0.3s;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-projeto:hover {
+    border: 1px solid var(--cor2);
+}
+
+.card-projeto > h1, p {
+    color: var(--cor7);
+    text-align: start;
+}
+
+.card-projeto > h1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.card-projeto p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.card-projeto > a {
+    display: block;
+    color: var(--cor1);
+    transition: 0.3s;
+}
+
+.card-projeto > a:hover {
+    color: white;
+    border-bottom: #e6e2e2;
 }
